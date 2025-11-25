@@ -1,0 +1,36 @@
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.7s ease;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.search-input {
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.search-input:focus {
+  outline: 2px solid #00a83f;
+}
+
